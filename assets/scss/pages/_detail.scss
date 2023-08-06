@@ -1,0 +1,36 @@
+.detail {
+  &__date {
+    &-line {
+      height: 50px;
+      width: 1px;
+      transform: rotate(30deg);
+      margin: 0 auto;
+      background: $primary;
+      @include min-lg {
+        height: 100px;
+      }
+    }
+    &-line2 {
+      height: 18px;
+      width: 1px;
+      display: block;
+      margin: 0 auto;
+      background: $primary;
+      @include min-lg {
+        height: 37px;
+      }
+    }
+  }
+}
+
+.ticketList {
+  &__body {
+    th,
+    td:not(:last-child) {
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    th {
+      font-weight: 400;
+    }
+  }
+}

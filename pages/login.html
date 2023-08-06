@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO活動訂票網｜詳情頁</title>
+  </head>
+  <body class="vh-100">
+    <%- include('./layout/header'); -%>
+    <main class="py-6 h-75">
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-4 col-lg-4">
+            <!-- content -->
+            <div>
+              <div class="text-center">
+                <h2 class="fs-5 fw-bold mb-4">
+                  <img src="../assets/images/sparkler.png" alt="" width="32px" class="mb-4" /><br />會員登入
+                </h2>
+              </div>
+              <form class="needs-validation font-sans" novalidate>
+                <ul class="mb-lg-7 mb-6">
+                  <li class="mb-4">
+                    <label for="login-name" class="mb-2">聯絡人姓名</label>
+                    <input type="text" class="form-control" id="login-name" placeholder="請輸入聯絡人名稱" required />
+                    <div class="invalid-feedback">請輸入聯絡人姓名</div>
+                  </li>
+                  <li class="mb-4">
+                    <label for="login-email" class="mb-2">Email</label>
+                    <input type="email" class="form-control" id="login-email" placeholder="請輸入Email" required />
+                    <div class="invalid-feedback">請輸入 Email</div>
+                  </li>
+                </ul>
+                <button type="submit" class="btn btn-primary w-100 d-block mx-auto mb-4 py-lg-2 py-4">
+                  登入<i class="icofont-double-right fw-bold ms-1"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

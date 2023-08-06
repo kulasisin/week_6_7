@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO活動訂票網｜詳情頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="py-11">
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-3 col-lg-6 px-8">
+            <div class="position-relative mb-10">
+              <div class="progress" style="height: 1px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Progress"
+                  style="width: 100%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="d-block top-0 start-0 translate-middle btn btn-primary rounded-0"
+                  style="width: 3rem; height: 3rem"
+                >
+                  <i
+                    class="icofont-verification-check fw-bold text-secondary"
+                  ></i>
+                  <span
+                    class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                    >訂單確認</span
+                  >
+                </button>
+              </div>
+              <button
+                type="button"
+                class="position-absolute top-0 start-50 translate-middle btn btn-primary border rounded-0 text-secondary"
+                style="width: 3rem; height: 3rem"
+              >
+                <i
+                  class="icofont-verification-check fw-bold text-secondary"
+                ></i>
+                <span
+                  class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                  >結帳付款</span
+                >
+              </button>
+              <button
+                type="button"
+                class="position-absolute top-0 start-100 translate-middle btn btn-primary text-secondary border rounded-0"
+                style="width: 3rem; height: 3rem"
+              >
+                3
+                <span
+                  class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                  >訂購結果</span
+                >
+              </button>
+            </div>
+          </div>
+          <div class="offset-lg-3 col-lg-6">
+            <!-- content -->
+            <div class="mb-10">
+              <div class="text-center">
+                <i
+                  class="icofont-check-circled fw-bold icofont-3x d-block mb-2"
+                ></i>
+                <h2 class="text-center fs-4 fw-bold mb-7">訂購完成</h2>
+              </div>
+              <table class="table align-middle fs-10 fs-lg-9 w-100">
+                <tbody class="border-top border-2">
+                  <tr>
+                    <th scope="row">訂單編號</th>
+                    <td class="text-end font-sans">892746123</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">訂購時間</th>
+                    <td class="text-end font-sans">2023/04/28 14:30</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">票券</th>
+                    <td class="text-end font-sans">
+                      改頭換面票（含大改造）$8000
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">取票序號</th>
+                    <td class="text-end font-sans text-danger">95G54J4434</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">取票號碼</th>
+                    <td class="text-end font-sans text-danger">04597101</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul class="font-sans">
+              <li>
+                請至 7-Eleven 完成取票，請於 ibon
+                點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。
+              </li>
+              <li>若您未前往取票，本筆交易仍視為完成，不可取消訂單。</li>
+              <li>若需退票，請按照退票辦法進行申請。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

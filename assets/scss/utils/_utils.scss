@@ -1,0 +1,20 @@
+$utilities: (
+  "object-fit": (
+    responsive: true,
+    property: object-fit,
+    values: (
+      contain: contain,
+      cover: cover,
+      fill: fill,
+      scale: scale-down,
+      none: none,
+    ),
+  ),
+  "font-size": (
+    responsive: true,
+    rfs: true,
+    property: font-size,
+    class: fs,
+    values: $font-sizes,
+  ),
+);

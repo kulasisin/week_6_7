@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO活動訂票網｜詳情頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="py-11">
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-3 col-lg-6 px-8">
+            
+            <div class="position-relative mb-10">
+              <div class="progress" style="height: 1px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Progress"
+                  style="width: 100%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="d-block top-0 start-0 translate-middle btn btn-primary rounded-0"
+                  style="width: 3rem; height: 3rem"
+                >
+                  <i class="icofont-verification-check fw-bold text-secondary"></i>
+                  <span
+                    class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                    >訂單確認</span
+                  >
+                </button>
+              </div>
+              <button
+                type="button"
+                class="position-absolute top-0 start-50 translate-middle btn btn-primary border rounded-0 text-secondary"
+                style="width: 3rem; height: 3rem"
+              >
+                2
+                <span
+                  class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                  >結帳付款</span
+                >
+              </button>
+              <button
+                type="button"
+                class="position-absolute bg-third top-0 start-100 translate-middle btn btn-outline-primary border rounded-0"
+                style="width: 3rem; height: 3rem"
+              >
+                3
+                <span
+                  class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                  >訂購結果</span
+                >
+              </button>
+            </div>
+          </div>
+          <div class="offset-lg-3 col-lg-6">
+            <!-- content -->
+            <div class="mb-10">
+              <h2 class="text-center fs-3 fw-bold mb-7">返老還童-制服聯誼</h2>
+              <p class="bg-primary text-secondary px-3 py-2 mb-7">
+                您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。
+              </p>
+              <table class="table align-middle fs-10 fs-lg-9 w-100">
+                <tbody class="border-top border-2">
+                  <tr>
+                    <th scope="row">訂單編號</th>
+                    <td class="text-end">892746123</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">票券</th>
+                    <td class="text-end">改頭換面票（含大改造）$8000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <div class="text-center">
+                <h2 class="fs-5 fw-bold mb-4">
+                  <img src="../assets/images/sparkler.png" alt="" width="32px" class="mb-4" /><br />結帳資訊
+                </h2>
+              </div>
+              <form class="needs-validation font-sans" novalidate>
+                <ul class="mb-7">
+                  <li class="mb-4">
+                    <label for="name" class="mb-2">取票資訊</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="請輸入身分證字號或護照號碼"
+                      class="mb-1"
+                      required
+                    />
+                    <p>
+                      請輸入您的 <span class="text-danger">身分證字號</span> 供取票使用，外籍人士請輸入
+                      <span class="text-danger">護照號碼</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-2">付款方式</p>
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                        checked
+                        required
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1"> 信用卡</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                      <label class="form-check-label" for="flexRadioDefault2"> ATM虛擬帳號</label>
+                    </div>
+                  </li>
+                </ul>
+                <button type="submit" class="btn btn-primary w-75 fs-7 d-block mx-auto mb-4 py-2">
+                  確認訂單並繳費 $8000<i class="icofont-double-right fw-bold ms-1"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
