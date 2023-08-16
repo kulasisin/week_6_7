@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>7TAO活動訂票網｜詳情頁</title>
-    <script type="module" crossorigin src="/week_6_7/assets/main-3202431a.js"></script>
-    <link rel="stylesheet" href="/week_6_7/assets/main-f3eafda3.css">
+    <title>7TAO活動訂票網</title>
+    <script type="module" crossorigin src="/week_6_7/assets/main-7a03b09d.js"></script>
+    <link rel="stylesheet" href="/week_6_7/assets/main-caa85949.css">
   </head>
   <body>
     <div class="header position-sticky w-100">
@@ -53,7 +53,7 @@
 </div>
     <main>
       <div class="container">
-        <section class="detail">
+        <section class="activity">
           <div class="row mt-7 mb-6">
             <div class="col-md-10 d-flex mb-2 mb-md-0">
               <div class="border border-3 p-lg-6 p-3">
@@ -64,7 +64,9 @@
                 />
               </div>
             </div>
-            <div class="detail__date col-md-2 fs-5 fs-lg-3 font-secondary flex-grow-1">
+            <div
+              class="activity-date col-md-2 fs-5 fs-lg-3 font-secondary flex-grow-1"
+            >
               <div class="row flex-md-column flex-grow-1 h-100">
                 <div class="col-md-12 col-4 pe-0 pe-lg-3 mb-md-3">
                   <time
@@ -77,36 +79,52 @@
                     class="border border-3 text-center py-md-10 px-6 px-lg-0 d-flex flex-md-column align-items-center flex-grow-1"
                   >
                     <time>MAY<br />19</time>
-                    <div class="detail__date-line"></div>
-                    <time class="fs-lg-4 fs-9">12:00<span class="detail__date-line2"></span>20:00</time>
+                    <div class="activity-date-line"></div>
+                    <time class="fs-9 fs-lg-4"
+                      >12:00<span class="activity-date-line2"></span>20:00</time
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <h2 class="fs-2 fw-bold mb-4">返老還童-制服聯誼</h2>
-          <p class="mb-6">穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！</p>
-          <ul class="tag tag--gap fw-bold mb-10 flex-wrap d-none d-lg-flex">
-            <li class="border"><a href="#" class="tag__link itemborder px-6 py-1">聯誼</a></li>
-            <li class="border"><a href="#" class="tag__link itemborder px-6 py-1">美食</a></li>
-            <li class="border"><a href="#" class="tag__link itemborder px-6 py-1">戶外</a></li>
-            <li class="border"><a href="#" class="tag__link itemborder px-6 py-1">交通旅遊</a></li>
+          <p class="mb-6">
+            穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！
+          </p>
+          <ul class="tag tag--gap d-none d-lg-flex fw-bold mb-10 flex-wrap">
+            <li class="border">
+              <a href="#" class="tag-links itemborder px-6 py-1">聯誼</a>
+            </li>
+            <li class="border">
+              <a href="#" class="tag-links itemborder px-6 py-1">美食</a>
+            </li>
+            <li class="border">
+              <a href="#" class="tag-links itemborder px-6 py-1">戶外</a>
+            </li>
+            <li class="border">
+              <a href="#" class="tag-links itemborder px-6 py-1">交通旅遊</a>
+            </li>
           </ul>
-          <div class="border border-3 p-lg-7 p-4 mb-6 mb-lg-10 font-sans">
+          <div class="font-sans border border-3 p-lg-7 p-4 mb-6 mb-lg-10">
             <p class="mb-4">想回到過去？試著讓故事繼續？</p>
             <p class="mb-4">
               由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！
             </p>
-            <p>活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶</p>
+            <p>
+              活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶
+            </p>
           </div>
         </section>
         <section class="mb-11">
-          <div class="d-flex justify-content-between align-items-center border border-3 px-6 py-5 mb-7">
+          <div
+            class="d-flex justify-content-between align-items-center px-6 py-5 mb-7 border border-3"
+          >
             <h2 class="fs-1 font-secondary">TICKET</h2>
             <p class="fs-4 fw-bold">購票資訊</p>
           </div>
-          <table class="ticketList table align-middle fs-10 fs-lg-9">
-            <thead class="ticketList__head border-bottom border-3">
+          <table class="tickets table align-middle fs-10 fs-lg-9">
+            <thead class="border-bottom border-3">
               <tr>
                 <th scope="col" width="20%">活動日期</th>
                 <th scope="col" width="40%">票種</th>
@@ -114,7 +132,7 @@
                 <th scope="col" width="10%">購票</th>
               </tr>
             </thead>
-            <tbody class="ticketList__body">
+            <tbody class="tickets-body">
               <tr>
                 <th scope="row">2023/5/12</th>
                 <td>普通票</td>
