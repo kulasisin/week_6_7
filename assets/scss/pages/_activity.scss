@@ -1,9 +1,9 @@
-.detail {
-  &__date {
+.activity {
+  &-date {
     &-line {
+      transform: rotate(30deg);
       height: 50px;
       width: 1px;
-      transform: rotate(30deg);
       margin: 0 auto;
       background: $primary;
       @include min-lg {
@@ -23,16 +23,10 @@
   }
 }
 
-.ticketList {
-  &__body {
-    th,
-    td:not(:last-child) {
-      font-family: "Noto Sans TC", sans-serif;
-    }
-
-    a:hover{
-      color:$secondary;
-      
+.tickets {
+  &-body {
+    a:hover {
+      color: $secondary;
     }
   }
 }

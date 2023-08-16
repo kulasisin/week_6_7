@@ -18,7 +18,7 @@
 }
 
 .category {
-  &__item {
+  &-item {
     height: 0;
     width: 32%;
     padding-bottom: 32%;
@@ -27,10 +27,10 @@
       padding-bottom: 15%;
     }
   }
-  &__link {
+  &-links {
     transition: 1s;
   }
-  &__link:hover {
+  &-links:hover {
     background: $secondary;
     border: #000;
   }
@@ -45,7 +45,7 @@
   img {
     height: 520px;
   }
-  &__desc {
+  &-desc {
     width: 90%;
 
     @include min-lg {
@@ -54,31 +54,31 @@
   }
 }
 .activity {
-  &__img {
+  &-pic {
     height: 255px;
     transition: opacity 0.5s;
   }
-  &__card:hover &__img {
+  &-card:hover &-pic {
     opacity: 0.6;
   }
-  &__btn-icon {
+  &-btn-icon {
     transition: transform 0.5s;
   }
-  &__btn:hover &__btn-icon {
+  &-btn:hover &-btn-icon {
     display: inline-block;
     transform: translateX(4px);
   }
 }
 
 .online {
-  &__img {
+  &-pic {
     height: 317px;
     object-position: center 35%;
   }
 }
 
 .tag {
-  &__link {
+  &-links {
     position: relative;
 
     &::before {
@@ -93,7 +93,7 @@
       position: absolute;
     }
   }
-  &__link:hover {
+  &-links:hover {
     color: white;
     background-color: #000;
     &::after {
@@ -115,34 +115,34 @@
 }
 
 .albums {
-  &__img {
+  &-pic {
     position: relative;
   }
-  &__img::after {
+  &-pic::after {
     content: "";
     display: block;
     padding-bottom: 100%;
   }
-  &__img img {
+  &-pic img {
     position: absolute;
     width: 100%;
     height: 100%;
   }
-  &__item {
+  &-item {
     position: relative;
     border: solid 2px;
     padding: 16px;
-    &--rotate2 {
+    &--rotatetion2 {
       transform: rotate(2deg);
     }
-    &--rotate3 {
+    &--rotatetion3 {
       transform: rotate(-2deg);
     }
-    &--rotate4 {
+    &--rotatetion4 {
       transform: rotate(2deg);
     }
   }
-  &__tag {
+  &-tag {
     position: absolute;
     z-index: 100;
     top: 0;
@@ -150,19 +150,19 @@
     transform: translate(-50%, -50%);
     background: $white;
     padding: 8px 16px;
-    &--rotate1,
-    &--rotate3,
-    &--rotate4 {
+    &--rotatetion1,
+    &--rotatetion3,
+    &--rotatetion4 {
       transform: translate(-50%, -50%) rotate(-4deg);
     }
-    &--rotate2 {
+    &--rotatetion2 {
       transform: translate(-50%, -50%) rotate(-3deg);
     }
   }
 }
 
 .contact {
-  &__icon {
+  &-icons {
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -172,7 +172,7 @@
     color: $white;
     background: $black;
   }
-  &__wrapper {
+  &-wrap {
     padding-left: 12px;
     padding-right: 12px;
     @include min-lg {
@@ -180,13 +180,13 @@
       border: 2px solid #000;
     }
   }
-  &__item {
+  &-item {
     border: 2px solid #000;
     @include min-lg {
       border: none;
     }
   }
-  &__item + &__item {
+  &-item + &-item {
     @include min-lg {
       border-left: 2px solid #000;
     }
