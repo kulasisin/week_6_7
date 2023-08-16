@@ -58,9 +58,22 @@
     height: 255px;
     transition: opacity 0.5s;
   }
-  &-card:hover &-pic {
-    opacity: 0.6;
+  &-card:hover {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      right: 60px;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      background-color: $secondary;
+      flex-shrink: 0;
+      z-index: -1;
+    }
   }
+
   &-btn-icon {
     transition: transform 0.5s;
   }
