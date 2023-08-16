@@ -36,5 +36,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
     );
   });
 })();
-// });
-// console.log("Hello world!");
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: "auto",
+  slidesPerGroupAuto: true,
+  loop: true,
+  speed: 8000,
+  autoplay: {
+    delay: 0,
+  },
+  allowTouchMove: false,
+});

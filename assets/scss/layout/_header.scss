@@ -1,9 +1,8 @@
 .header {
-  // position: sticky;
   top: 0;
   background: #f3f1e5;
   z-index: map-get($z-index, header);
-  &__search {
+  &-searchbar {
     width: 207px;
     @include min-lg {
       width: 335px;
@@ -29,7 +28,7 @@
   }
 }
 .nav {
-  &__decoLine {
+  &-line {
     position: absolute;
     left: 0;
     top: 63px;

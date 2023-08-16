@@ -29,8 +29,10 @@
     td:not(:last-child) {
       font-family: "Noto Sans TC", sans-serif;
     }
-    th {
-      font-weight: 400;
+
+    a:hover{
+      color:$secondary;
+      
     }
   }
 }
